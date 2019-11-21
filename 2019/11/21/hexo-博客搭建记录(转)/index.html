@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hello World | MRain</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Hello World | MRain">
+  <title>hexo-博客搭建记录(转) | MRain</title>
+  <meta name="keywords" content=" hexo ">
+  <meta name="description" content="hexo-博客搭建记录(转) | MRain">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="在Ubuntu16.04和Windows10下搭建Hexo写博客的过程在Ubuntu16.04和Windows10下搭建Hexo写博客的过程 更新了Ubuntu16.04之后，便想将windows10下面用Hexo搭建的github博客在Ubuntu下面生成更新下。 安装nodejs过程试了直接下载官方的编译安装包，使用后发现不能正常使用，于是转而使用源码编译然后再自行安装。 下载源码地址：htt">
 <meta name="keywords" content="hexo">
@@ -246,19 +246,31 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-hexo-博客搭建记录(转)" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World</h1>
+        <h1 class="article-title">hexo-博客搭建记录(转)</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            
+                <a  data-rel="工具">工具</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color5">hexo</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-20 14:20:04'>2019-11-20 14:46</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-21 14:18:47'>2019-11-21 09:00</time>
         
     </div>
     <div class="article-meta">
@@ -280,7 +292,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#在Ubuntu16-04和Windows10下搭建Hexo写博客的过程"><span class="toc-text">在Ubuntu16.04和Windows10下搭建Hexo写博客的过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#win10自定义配置nodejs"><span class="toc-text">win10自定义配置nodejs</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -296,20 +308,187 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h3 id="在Ubuntu16-04和Windows10下搭建Hexo写博客的过程"><a href="#在Ubuntu16-04和Windows10下搭建Hexo写博客的过程" class="headerlink" title="在Ubuntu16.04和Windows10下搭建Hexo写博客的过程"></a>在Ubuntu16.04和Windows10下搭建Hexo写博客的过程</h3><p>在Ubuntu16.04和Windows10下搭建Hexo写博客的过程</p>
+<p>更新了Ubuntu16.04之后，便想将windows10下面用Hexo搭建的github博客在Ubuntu下面生成更新下。</p>
+<p>安装nodejs过程试了直接下载官方的编译安装包，使用后发现不能正常使用，于是转而使用源码编译然后再自行安装。</p>
+<p>下载源码地址：<a href="http://nodejs.cn/download" target="_blank" rel="noopener">http://nodejs.cn/download</a></p>
+<hr>
+<h3 id="win10自定义配置nodejs"><a href="#win10自定义配置nodejs" class="headerlink" title="win10自定义配置nodejs"></a>win10自定义配置nodejs</h3><p>1、首先安装的位置根据需要选择；</p>
+<p>2、安装之后在安装目录下面创建文件夹：</p>
+<pre><code>“node_modules\npm\node_global_modules”
+“node_modules\npm\node_cache”
+</code></pre>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>3、在系统用户目录下“C:\Users\XXX”，创建文件.npmrc，填写内容</p>
+<pre><code>prefix=C:\Program Files\nodejs\node_modules\npm\node_global_modules
+cache=C:\Program Files\nodejs\node_modules\npm\node_cache
+registry=https://registry.npm.taobao.org
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+国内源：
+npm config set registry https://registry.npm.taobao.org/
+原始源：
+npm config set registry https://registry.npmjs.org/
+配置成功之后可以用命令：
+npm config get registry
+查看配置的结果
+</code></pre>
+<p>这里配置了淘宝的镜像源，之后打开命令符窗口，输入命令：</p>
+<pre><code>npm config ls
+查看参数修改情况
+</code></pre>
+<p>修改没问题之后，设置环境变量：</p>
+<pre><code>NODE_HOME = C:\Program Files\nodejs    
+%NODE_HOME%;%NODE_HOME%\node_modules;%NODE_HOME%\node_modules\npm\node_global_modules;
+</code></pre>
+<p>安装命令：</p>
+<pre><code>npm install xxx -g //全局安装
+npm install xxx //安装到当前目录中
+</code></pre>
+<p>使用命令：</p>
+<pre><code>./configure
+make
+sudo make install
+</code></pre>
+<p>安装nodejs成功。</p>
+<p>配置预环境到.bashrc(使用淘宝的nodejs镜像源环境)，执行</p>
+<pre><code>source ~.bashrc
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+alias cnpm="npm --registry=https://registry.npm.taobao.org /--cache=$HOME/.npm/.cache/cnpm /--disturl=https://npm.taobao.org/dist /--userconfig=$HOME/.cnpmrc"
+</code></pre>
+<p>接下来在终端内运行:</p>
+<pre><code>sudo npm install hexo-cli -g
+sudo npm update hexo-cli -g
+mkdir {目录路径/文件夹名称}
+hexo init {目录路径/文件夹名称}
+cd {目录路径/文件夹名称}
+hexo n "我的博客" == hexo new "我的博客" #新建文章
+hexo p == hexo publish
+hexo g == hexo generate#生成
+hexo s == hexo server #启动服务预览
+hexo d == hexo deploy#部署
+hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。
+hexo server -s #静态模式
+hexo server -p 5000 #更改端口
+hexo server -i 192.168.1.1 #自定义 IP
+hexo clean #清除缓存 网页正常情况下可以忽略此条命令
+hexo g #生成静态网页
+hexo d #开始部署
+hexo d #部署 #可与hexo g合并为 hexo d -g
+（如果执行后出现拨错：ERROR Deployer not found: git
+需要执行sudo npm install hexo-deployer-git --save）
+</code></pre>
+<p>部署类型设置git</p>
+<p>hexo 3.0 部署类型不再是github，_config.yml 中修改</p>
+<p>详细配置参考：</p>
+<pre><code>https://hexo.io/zh-cn/docs/configuration.html
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    #
+    # Deployment
+    ## Docs: http://hexo.io/docs/deployment.html
+    deploy:
+        type: git
+        repository: git@***.github.com:***/***.github.io.git
+        branch: master
+    #
+hexo generate --watch #监视文件变动
+在终端中可以使用：
 
+git config -l #查看当前的git用户信息。
+</code></pre>
+<p>这里注意SSH-KEY的相关配置</p>
+<p>在Ubuntu系统中，终端中执行：</p>
+<pre><code>ssh-keygen -t rsa -C "YOUR_EMAIL@YOUREMAIL.COM"
+（这里的YOUR_EMAIL@YOUREMAIL.COM改成自己的邮箱）
+</code></pre>
+<p>这样会在当期用户的目录下.ssh文件夹中生成：生成密钥文件,这样就会生成默认名字为id_rsa和id_rsa.pub</p>
+<p>打开公钥文件（id_rsa.pub），并把内容复制至代码托管平台上。</p>
+<p>多账号ssh配置：</p>
+<p>当你在Github或Coding都有账号时，</p>
+<p>1.生成指定名字的密钥</p>
+<pre><code>ssh-keygen -t rsa -C "YOUR_EMAIL@YOUREMAIL.COM" -f ~/.ssh/github</code></pre>
+<p>命名为github（这里叫什么随意，不要重名即可），然后会生成github和github.pub这两个文件，</p>
+<p>打开公钥文件（id_rsa.pub），并把内容复制至代码托管平台上，</p>
+<p>修改config文件，</p>
+<p>添加如下代码：</p>
+<pre><code>Host github.com www.github.com
+IdentityFile ~/.ssh/github
+测试：
+
+ssh -T git@github.com
+如果是coding的，则这样填写：
+
+Host coding.net www.coding.net
+IdentityFile ~/.ssh/coding
+</code></pre>
+<p>同一平台下的多账号配置</p>
+<p>如果有两个Github账号：</p>
+<p>也是按照 多账号设置 的方法进行第一第二步</p>
+<p>这样你就已经正确的生成好了两个密钥，假设是：github_a和github_b分别对应的是你的账户aaaaaa和账户bbbbbb</p>
+<p>修改config文件</p>
+<pre><code>vim ~/.ssh/config
+</code></pre>
+<p>添加如下代码</p>
+<pre><code>Host aaaaaa.github.com
+HostName github.com
+User git
+IdentityFile ~/.ssh/github_a
+Host bbbbbb.github.com
+HostName github.com
+User git
+IdentityFile ~/.ssh/github_b
+</pre></code>
+<p>修改ssh URL</p>
+<p>例如原来的url是：<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:aaaaaa/xxxxxx.git</p>
+<p>需要改成：<a href="mailto:git@aaaaaa.github.com" target="_blank" rel="noopener">git@aaaaaa.github.com</a>:aaaaaa/xxxxxx.git</p>
+<p>bbbbbb账号的修改也是如此</p>
+<p>最后补充一点（这部分Git熟悉的基本可以略过）：有些童鞋可能在设置这个多账号前已经配置了一个Github的ssh，然后把代码clone下来，配置多账号后，原来的代码就提交不上了。</p>
+<p>此时你进入 原来clone的代码文件夹下，执行</p>
+<pre><code>git remote -v
+</code></pre>
+<p>即可看到远处资源库路径</p>
+<p>如：<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:aaaaaa/xxxxxx.git</p>
+<p>执行</p>
+<pre><code>git remote remove origin</code></pre>
+<p>删除该远程路径</p>
+<p>执行</p>
+<pre><code>git remote add origin git@aaaaaa.github.com:aaaaaa/xxxxxx.git
+</code></pre>
+<p>加上正确的远程仓库</p>
+<p>文章编辑模板：</p>
+<pre><code>title: 使用Hexo搭建个人博客
+layout: post
+date: 2014-03-03 19:07:43
+comments: true
+categories: Blog
+tags: [Hexo]
+keywords: Hexo, Blog
+description: 简介</code></pre>
+<p>变量描述:</p>
+<pre><code>layout     布局
+title     标题
+date     文件建立日期</code></pre>
+<p>以上是文章摘要 以下是余下全文</p>
+<p>写作技巧:</p>
+<pre><code>hexo new page <title>
+hexo new post <title>
+
+:title     标题
+:year     建立的年份（4 位数）
+:month     建立的月份（2 位数）
+:i_month     建立的月份（去掉开头的零）
+:day     建立的日期（2 位数）
+:i_day     建立的日期（去掉开头的零）
+</code></pre>
+<p>windows10环境下搭建相对简单，下载安装文件：</p>
+<pre><code>Git和node
+https://git-scm.com/downloads
+http://nodejs.cn/download/</code></pre>
+<p>安装之后，在相应的位置创建新的文件夹，进入git终端，按照Ubuntu环境下执行相应命令写文章发文章即可。</p>
+<pre><code>hexo d</code></pre>
+<p>执行报错</p>
+<pre><code>ERROR Deployer not found: git</code></pre>
+<p>解决方法</p>
+<pre><code>npm install hexo-deployer-git --save</code></pre>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
@@ -322,12 +501,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Hello World</p>
+    <p><span class="copy-title">文章标题:</span>hexo-博客搭建记录(转)</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="MRain">MRain</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-11-20, 14:46:55</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-20, 14:20:04</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/20/hello-world/" title="Hello World">http://yoursite.com/2019/11/20/hello-world/</a>
+    <p><span class="copy-title">发布时间:</span>2019-11-21, 09:00:48</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-21, 14:18:47</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/21/hexo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95(%E8%BD%AC)/" title="hexo-博客搭建记录(转)">http://yoursite.com/2019/11/21/hexo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95(%E8%BD%AC)/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
